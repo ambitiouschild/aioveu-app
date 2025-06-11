@@ -8,7 +8,7 @@
 			<!-- #ifdef MP -->
 			<button class="confirm-btn" @click.stop="getUserProfile">小程序登录授权</button>
 			<view class="tip">
-				温馨提示:未注册有来小店的用户,初次登录时将完成注册
+				温馨提示:未注册可我不敌可爱的用户,初次登录时将完成注册
 			</view>
 			<!-- #endif -->
 

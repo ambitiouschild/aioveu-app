@@ -5,7 +5,7 @@
 			"path": "pages/index/index",
 			"style": {
 				// #ifdef MP 
-				"navigationBarTitleText": "有来小店",
+				"navigationBarTitleText": "可我不敌可爱",
 				//"navigationStyle": "custom",
 				// #endif 
 				"app-plus": {
@@ -177,7 +177,7 @@
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "有来小店",
+		"navigationBarTitleText": "可我不敌可爱",
 		"navigationBarBackgroundColor": "#FFFFFF",
 		"backgroundColor": "#f8f8f8"
 	},

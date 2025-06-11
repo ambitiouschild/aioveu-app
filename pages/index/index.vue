@@ -152,7 +152,7 @@
 			},
 			onShareAppMessage() {
 			return {
-				title: '买东西~就来有来小店',
+				title: '买东西~就来可我不敌可爱',
 				path: '/pages/index/index',
 				imageUrl: '********',
 				success: function(res) {
@@ -165,7 +165,7 @@
 		},
 		onShareTimeline() {
 			return {
-				title: '买东西~就来有来小店',
+				title: '买东西~就来可我不敌可爱',
 				query: 'key=value',
 				imageUrl: '********',
 				success: function(res) {

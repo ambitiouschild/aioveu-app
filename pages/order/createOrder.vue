@@ -25,7 +25,7 @@
 		<view class="goods-section">
 			<view class="g-header b-b">
 				<image class="logo" src="../../static/logo.png" />
-				<text class="name">有来小店</text>
+				<text class="name">可我不敌可爱</text>
 			</view>
 			<!-- 商品列表 -->
 			<view class="g-item" v-for="(item, index) in orderItems" :key="item.skuId">
