@@ -57,7 +57,7 @@
 </template>
 
 <script>
-	import uniLoadMore from "@/components/uni-load-more/uni-load-more.vue";
+	import uniLoadMore from "@/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue";
 	import empty from "@/components/empty";
 	import Json from "@/Json";
 	import {

@@ -46,7 +46,7 @@
 </template>
 
 <script>
-	import uniLoadMore from '@/components/uni-load-more/uni-load-more.vue';
+	import uniLoadMore from '@/uni_modules/uni-load-more/components/uni-load-more/uni-load-more.vue';
 
 	import {getCategoryList} from '@/api/pms/category.js';
 
