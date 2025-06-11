@@ -78,33 +78,33 @@
 				<scroll-view scroll-x class="h-list">
 					<image
 						@click="navTo('/pages/product/product')"
-						src="https://www.youlai.tech/files/default/d97457b3fd7d4aef8846da96fe032bf8.jpg"
+						src="https://www.aioveu.tech/files/default/d97457b3fd7d4aef8846da96fe032bf8.jpg"
 						mode="aspectFill"
 					></image>
 					<image
 						@click="navTo('/pages/product/product')"
-						src="http://a.youlai.tech:9000/default/8815c9a46fcc4b1ea952623406750da5.jpg"
+						src="http://a.aioveu.tech:9000/default/8815c9a46fcc4b1ea952623406750da5.jpg"
 						mode="aspectFill"
 					></image>
 					<image
 						@click="navTo('/pages/product/product')"
-						src="https://www.youlai.tech/files/default/835d73a337964b9b97e5c7c90acc8cb2.png"
+						src="https://www.aioveu.tech/files/default/835d73a337964b9b97e5c7c90acc8cb2.png"
 						mode="aspectFill"
 					></image>
 					<image
 						@click="navTo('/pages/product/product')"
-						src="https://oss.youlai.tech/default/0ccd5bf5cf384185be1f18a01da076b9.png"
+						src="https://oss.aioveu.tech/default/0ccd5bf5cf384185be1f18a01da076b9.png"
 						mode="aspectFill"
 					></image>
 				
 					<image
 						@click="navTo('/pages/product/product')"
-						src="https://www.youlai.tech/files/default/835d73a337964b9b97e5c7c90acc8cb2.png"
+						src="https://www.aioveu.tech/files/default/835d73a337964b9b97e5c7c90acc8cb2.png"
 						mode="aspectFill"
 					></image>
 					<image
 						@click="navTo('/pages/product/product')"
-						src="https://www.youlai.tech/files/default/835d73a337964b9b97e5c7c90acc8cb2.png"
+						src="https://www.aioveu.tech/files/default/835d73a337964b9b97e5c7c90acc8cb2.png"
 						mode="aspectFill"
 					></image>
 				</scroll-view>
