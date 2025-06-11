@@ -30,6 +30,7 @@
 
 - 
 - 全栈技术支持: 微服务接口、Vue3 管理前端、uni-app 移动端和 K8S 持续集成交付；
+- 在uniapp转微信小程序过程中经验总结：总体来说对于小一点并且功能不复杂的页面，相对于使用微信小程序语法制作小程序uniapp制作还是相对快捷，uniapp在功能组件方面大于微信小程序自带组件。uniapp在语法校验没有微信小程序严格。在自作过程中遇到的问题
 
 ## 技术栈
 
@@ -248,5 +249,5 @@ aioveu-app/                        # aioveu-app项目根目录
 
 | 公众号                                                       | 交流群                                                       |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <img src="https://cdn.jsdelivr.net/gh/ambitiouschild/ambitiouschild/coding.gif " height="180px"> | <img src="https://cdn.jsdelivr.net/gh/ambitiouschild/ambitiouschild//images/可我不敌可爱公众号二维码2.jpg" height="180px"> |
+| <img height="180px" src="https://cdn.jsdelivr.net/gh/ambitiouschild/ambitiouschild/images/ambitiouschild_Public_Platform.jpg"/> | <img src="https://cdn.jsdelivr.net/gh/ambitiouschild/ambitiouschild/images/ambitiouschild_group.jpg" height="300px"> |
 
