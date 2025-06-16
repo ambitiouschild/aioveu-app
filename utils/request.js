@@ -1,4 +1,12 @@
 import axios from 'axios'
+//请求库的差异
+// 虽然两个项目都使用了相同的代码，但可能由于：
+// 请求库（如axios）版本不同导致的行为差异
+// 请求库的实例配置不同（如全局拦截器）
+// 解决方案：
+// 在不能发送请求的项目中，打印请求库的版本：
+
+// console.log(axios.version);
 import store from '@/store'
 axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8'
 
@@ -6,7 +14,8 @@ axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8'
 const service = axios.create({
 	// baseURL: "https://api.youlai.tech", //  线上接口地址(微信、HBX内置浏览器)
 	// baseURL: "http://app.youlai.tech/prod-api", // 线上接口地址(谷歌等有跨域限制浏览器)
-	baseURL: "http://localhost:9999", // 本地开发环境地址
+	baseURL: "http://192.168.0.108:9999", // 本地开发环境地址
+	// baseURL: "http://localhost:9999", // 本地开发环境地址
 	withCredentials: true, // send cookies when cross-domain requests
 	timeout: 10000 // request timeout
 })
