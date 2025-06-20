@@ -24,7 +24,7 @@ export function login(code) {
 // #ifndef MP
 export function login(mobile, code) {
 	return request({
-		url: '/youlai-auth/oauth2/token',
+		url: '/aioveu-auth/oauth2/token',
 		method: 'post',
 		params: {
 			mobile: mobile,
@@ -42,7 +42,7 @@ export function login(mobile, code) {
 
 export function logout() {
 	return request({
-		url: '/youlai-auth/oauth/logout',
+		url: '/aioveu-auth/oauth/logout',
 		method: 'delete',
 		headers: {
 			'auth': true // 需要认证，通过
@@ -62,7 +62,7 @@ export function getUserInfo() {
 
 export function sendSmsCode(phoneNumber) {
 	return request({
-		url: '/youlai-auth/api/v1/auth/sms_code',
+		url: '/aioveu-auth/api/v1/auth/sms_code',
 		method: 'post',
 		params: {
 			mobile: phoneNumber

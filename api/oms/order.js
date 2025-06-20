@@ -3,7 +3,7 @@ import request from '@/utils/request'
 // 订单列表
 export function listOrdersWithPage(params) {
 	return request({
-		url: '/mall-oms/app-api/v1/orders',
+		url: '/aioveu-oms/app-api/v1/orders',
 		method: 'get',
 		params: params,
 		headers: {
@@ -15,7 +15,7 @@ export function listOrdersWithPage(params) {
 // 订单确认
 export function confirm(skuId) {
 	return request({
-		url: '/mall-oms/app-api/v1/orders/confirm',
+		url: '/aioveu-oms/app-api/v1/orders/confirm',
 		method: 'post',
 		params: {
 			skuId: skuId
@@ -29,7 +29,7 @@ export function confirm(skuId) {
 // 订单提交
 export function submit(data) {
 	return request({
-		url: '/mall-oms/app-api/v1/orders/submit',
+		url: '/aioveu-oms/app-api/v1/orders/submit',
 		method: 'post',
 		data: data,
 		headers: {
@@ -41,7 +41,7 @@ export function submit(data) {
 // 订单支付
 export function pay(data) {
 	return request({
-		url: '/mall-oms/app-api/v1/orders/payment',
+		url: '/aioveu-oms/app-api/v1/orders/payment',
 		method: 'post',
 		data:data,
 		headers: {
@@ -53,7 +53,7 @@ export function pay(data) {
 // 取消订单
 export function cancelOrder(orderId) {
 	return request({
-		url: '/mall-oms/app-api/v1/orders/cancel',
+		url: '/aioveu-oms/app-api/v1/orders/cancel',
 		method: 'put',
 		params: {
 			id: orderId
@@ -67,7 +67,7 @@ export function cancelOrder(orderId) {
 // 删除订单
 export function deleteOrder(orderId) {
 	return request({
-		url: '/mall-oms/app-api/v1/orders/' + orderId,
+		url: '/aioveu-oms/app-api/v1/orders/' + orderId,
 		method: 'delete',
 		headers: {
 			'auth': true // 需要认证

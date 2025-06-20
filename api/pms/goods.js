@@ -7,7 +7,7 @@ import request from '@/utils/request'
  */
 export function listSpuPages(params) {
 	return request({
-		url: '/mall-pms/app-api/v1/spu/pages',
+		url: '/aioveu-pms/app-api/v1/spu/pages',
 		method: 'get',
 		params: params
 	})
@@ -20,7 +20,7 @@ export function listSpuPages(params) {
  */
 export function listSeckillingSpus() {
 	return request({
-		url: '/mall-pms/app-api/v1/spu/seckilling',
+		url: '/aioveu-pms/app-api/v1/spu/seckilling',
 		method: 'get',
 	})
 }
@@ -32,7 +32,7 @@ export function listSeckillingSpus() {
  */
 export function getSpuDetail(spuId) {
 	return request({
-		url: '/mall-pms/app-api/v1/spu/' + spuId,
+		url: '/aioveu-pms/app-api/v1/spu/' + spuId,
 		method: 'get'
 	})
 }
