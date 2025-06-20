@@ -209,6 +209,9 @@
 		addCartItem,
 		confirm as orderConfirm
 	} from '@/api/oms/cart.js'
+  import {
+    loadData
+  } from '@/pages/cart/cart.vue'
 	export default {
 		components: {
 			share
@@ -336,13 +339,7 @@
 				const skuId = this.selectedSku.id
 				addCartItem(skuId).then(response => {
 					uni.switchTab({
-						url: `/pages/cart/cart`,
-						success: (res) => {
-							let page = getCurrentPages().pop();
-							if (page == undefined || page == null) return;
-							page.curSegment = 0;
-							page.loadData();
-						},
+						url: `/pages/cart/cart`
 					});
 				})
 			},

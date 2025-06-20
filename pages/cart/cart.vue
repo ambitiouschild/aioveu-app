@@ -19,14 +19,14 @@
 				<block v-for="(item, index) in cartItemList" :key="item.skuId">
 					<view class="cart-item" :class="{ 'b-b': index !== cartItemList.length - 1 }">
 						<view class="image-wrapper">
-							<image :src="item.picUrl" class="loaded" mode="aspectFill" lazy-load
+							<image :src="item.imageUrl" class="loaded" mode="aspectFill" lazy-load
 								@load="onImageLoad('cartItemList', index)" @error="onImageError('cartItemList', index)">
 							</image>
 							<view class="yticon icon-xuanzhong2 checkbox" :class="{ checked: item.checked }"
 								@click="handleCheckItem(index, item.skuId)"></view>
 						</view>
 						<view class="item-right">
-							<text class="clamp title">{{ item.goodsName }}</text>
+							<text class="clamp title">{{ item.spuName }}</text>{{item.skuName}}
 							<text class="price">¥{{ item.price | moneyFormatter }}</text>
 							<uni-number-box class="step" :min="1" :max="item.stock"
 								:value="item.count"
@@ -35,6 +35,7 @@
 						</view>
 						<text class="del-btn yticon icon-fork" @click="removeCartItem(item.skuId)"></text>
 					</view>
+          <!-- picUrl goodsName, price -->
 				</block>
 			</view>
 			<!-- 底部菜单栏 -->
@@ -205,10 +206,16 @@
 				} else if (checkedItemList.length == 1) {
 					this.totalPrice = checkedItemList[0].count * checkedItemList[0].price;
 				} else {
-					this.totalPrice = checkedItemList.reduce((prev, curr) => {
-						return prev.price * prev.count + curr.price * curr.count;
-					});
+					// this.totalPrice = checkedItemList.reduce((prev, curr) => {
+					// 	return prev.price * prev.count + curr.price * curr.count;
+					// });
+          let price = 0;
+          checkedItemList.forEach(item => {
+            price += item.price * item.count;
+          })
+          this.totalPrice = price;
 				}
+
 			},
 
 			// 结算页面
